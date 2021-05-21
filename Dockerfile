@@ -1,6 +1,6 @@
 FROM docker:latest
 
-ENV TRIVY_VERSION 0.10.1
+ENV TRIVY_VERSION 0.18.2
 
 RUN apk add --quiet --no-cache --no-progress --update python3 python3-dev py-pip build-base curl git && pip install --quiet awscli && rm -rf /var/cache/apk/*
 
